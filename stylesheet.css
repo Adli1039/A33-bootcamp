@@ -3,7 +3,6 @@
 * {
     box-sizing: border-box;
   }
-  
   html, body,
   ul, ol, li,
   h1, h2, h3, h4, h5, h6, p, div {
@@ -31,21 +30,24 @@
   
   .top-wrapper {
     padding: 180px 0 100px 0;
-    background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+    background-image: url(2.jpg);
     background-size: cover;
     color: white;
     text-align: center;
   }
   
   .top-wrapper h1 {
-    opacity: 0.7;
-    font-size: 45px;
+    font-size: 40px;
     letter-spacing: 5px;
     margin-bottom: 10px;
   }
   
+  .Judul {
+    color:rgba(	0, 168, 255, 1);
+  }
+  
   .top-wrapper p {
-    opacity: 0.7;
+    opacity: 0.8;
     margin-bottom: 3px;
   }
   
@@ -92,7 +94,7 @@
     height: 65px;
     width: 100%;
     background-color: rgba(34, 49, 52, 0.9);
-    position :fixed;
+    position: fixed;
     top: 0;
     z-index: 10;
   }
@@ -106,9 +108,18 @@
     float: left;
   }
   
+  .header-left {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.1s;
+  }
+  
   .header-right {
     float: right;
-    margin-right: -25px;
+    margin-right: 25px;
   }
   
   .header-right a {
@@ -117,7 +128,7 @@
     color: white;
     display: block;
     float: left;
-    transition: all 0.5s;
+    transition: all 0.1s;
   }
   
   .header-right a:hover {
@@ -181,6 +192,52 @@
     background-color: #5dca88;
     cursor: pointer;
     box-shadow: 0 7px #1a7940;
+  }
+  
+  .testi-wrapper h1 {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 40px;
+    color: rgba(59, 89, 152, 0.8);
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .slide-row {
+    display: flex;
+    width: 1200px;
+  }
+  
+  .slide-col {
+    width: 800px;
+    height: 400px;
+    position: relative;
+  }
+  
+  .user-text {
+    background: rgba(59, 89, 152, 0.8);
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: whitesmoke;
+    padding: 45px;
+    box-sizing: border-box;
+    z-index: 2;
+  }
+  
+  .user-text p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  .user-text h4 {
+    margin: 35px 0 5px;
+    color: #ffff;
   }
   
   .message:active {
